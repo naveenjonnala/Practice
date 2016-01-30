@@ -1,45 +1,55 @@
-
+<!doctype html>
 <html>
     <head>
     <link rel="stylesheet" type="text/css" href="cal.css"/>
-    
+    <script>
+        
+        
+        
+        
+        
+        </script>
     </head>
+    <body>
             <div id="calculator">
                 <h1><b>CALCULATOR</b></h1>
                 <FORM NAME="Calc">
-                    <TABLE BORDER=4>
+                    <TABLE BORDER='4'>
                         <TR>
                             <TD>
-                                <INPUT class="Display" TYPE="text"   NAME="Input" Size="12" placeholder ="Operation" readonly>=
-                                <INPUT class="Display" TYPE="text"   NAME="InputA" Size="12" placeholder ="Result" readonly><br>
+                                <INPUT class="display" TYPE="text"   NAME="A" Size="12" placeholder ="Input A" readonly><br>
+                                <p class="operand"> </p>
+                                <INPUT class="display" TYPE="text"   NAME="B" Size="12" placeholder ="Input B" >
+                                <p>=</p>
+                                <INPUT class="display" TYPE="text"   NAME="Result" Size="12" placeholder ="Result" readonly><br>
                             </TD>
                         </TR>
                         <TR>
                             <TD>
-                                <INPUT class ="reset" TYPE="button" NAME="Allclear" VALUE="  AC  " OnClick="Calc.InputA.value = ''; Calc.Input.value = ''">
-                                <INPUT class ="reset" TYPE="button" NAME="Inputclear" VALUE="  IC  " OnClick="Calc.Input.value = ''">
-                                <INPUT class ="reset" TYPE="button" NAME="outclear" VALUE="  OC  " OnClick="Calc.InputA.value = ''">
-                                <INPUT class ="reset" TYPE="button" NAME="Inputclear" VALUE=" BACK " OnClick=""><br><br><br>
-                                <INPUT class ="Digits" TYPE="button" NAME="one"   VALUE="  7  " OnClick="Calc.Input.value += '7'">
-                                <INPUT class ="Digits" TYPE="button" NAME="two"   VALUE="  8  " OnCLick="Calc.Input.value += '8'">
-                                <INPUT class ="Digits" TYPE="button" NAME="three" VALUE="  9  " OnClick="Calc.Input.value += '9'">
-                                <INPUT class="operater" TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '"><br>
-                                <INPUT class ="Digits" TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
-                                <INPUT class ="Digits" TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
-                                <INPUT class ="Digits" TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
-                                <INPUT class="operater" TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '"><br>
-                                <INPUT class ="Digits" TYPE="button" NAME="seven" VALUE="  1  " OnClick="Calc.Input.value += '1'">
-                                <INPUT class ="Digits" TYPE="button" NAME="eight" VALUE="  2  " OnCLick="Calc.Input.value += '2'">
-                                <INPUT class ="Digits" TYPE="button" NAME="nine"  VALUE="  3  " OnClick="Calc.Input.value += '3'">
-                                <INPUT class="operater"TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '"><br>
-                                <INPUT class="Digits" TYPE="button" NAME="decimal" VALUE=" . " OnClick="Calc.Input.value += '.'">
-                                <INPUT class ="Digits" TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
-                                <INPUT class="eval" TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.InputA.value = eval(Calc.Input.value)">
-                                <INPUT class="operater" TYPE="button" NAME="div"   VALUE="  ÷  " OnClick="Calc.Input.value += ' / '"><br>
+                                <INPUT class ="reset" TYPE="button" NAME="Allclear" VALUE="  AC  " OnClick="Calc.Result.value = ''; Calc.A.value = ''; Calc.B.value = ''">
+                                <INPUT class ="reset" TYPE="button" NAME="Inputclear" VALUE="  IC  " OnClick="Calc.A.value = ''">
+                                <INPUT class ="reset" TYPE="button" NAME="outclear" VALUE="  OC  " OnClick="Calc.Result.value = ''">
+                                <INPUT class ="reset" TYPE="button" NAME="Inputclear" VALUE=" I2C " OnClick="Calc.B.value = ''"><br><br><br>
+                                <INPUT class ="digits" TYPE="button" NAME="one"   VALUE="  7  " OnClick="Calc.A.value += '7'">
+                                <INPUT class ="digits" TYPE="button" NAME="two"   VALUE="  8  " OnCLick="Calc.A.value += '8'">
+                                <INPUT class ="digits" TYPE="button" NAME="three" VALUE="  9  " OnClick="Calc.A.value += '9'">
+                                <INPUT class="operater" TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.A.value += '+'"><br>
+                                <INPUT class ="digits" TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.A.value += '4'">
+                                <INPUT class ="digits" TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.A.value += '5'">
+                                <INPUT class ="digits" TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.A.value += '6'">
+                                <INPUT class="operater" TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.A.value += '-'"><br>
+                                <INPUT class ="digits" TYPE="button" NAME="seven" VALUE="  1  " OnClick="Calc.A.value += '1'">
+                                <INPUT class ="digits" TYPE="button" NAME="eight" VALUE="  2  " OnCLick="Calc.A.value += '2'">
+                                <INPUT class ="digits" TYPE="button" NAME="nine"  VALUE="  3  " OnClick="Calc.A.value += '3'">
+                                <INPUT class="operater"TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.A.value += '*'"><br>
+                                <INPUT class="digits" TYPE="button" NAME="decimal" VALUE=" . " OnClick="Calc.A.value += '.'">
+                                <INPUT class ="digits" TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.A.value += '0'">
+                                <INPUT class="eval" TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Result.value = eval(Calc.A.value)">
+                                <INPUT class="operater" TYPE="button" NAME="div"   VALUE="  ÷  " OnClick="Calc.A.value += '/'"><br>
                             </TD>
                         </TR>
                         </TABLE>
                     </FORM>
                 </div>               
-                    
+    </body>               
 </html>
